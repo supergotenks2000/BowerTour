@@ -21,6 +21,7 @@ namespace BowerTour
         public void Configure(IApplicationBuilder app)
         {
             app.UseIISPlatformHandler();
+            app.UseStaticFiles();
 
             app.Run(async (context) =>
             {
